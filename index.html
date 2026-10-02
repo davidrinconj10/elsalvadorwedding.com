@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Salvador Wedding | Luxury Wedding Photography & Films</title>
+<meta name="description" content="Luxury wedding photography and cinematic films in El Salvador and London. Destination weddings, relaxed storytelling and editorial imagery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="promo">50% OFF · WEDDINGS IN EL SALVADOR · UNTIL NOVEMBER 2027 <a href="#contact">GET IN TOUCH TO CLAIM YOUR DISCOUNT</a></div>
+
+<header class="nav">
+  <a class="brand" href="#home"><span>EL SALVADOR</span><strong>WEDDING</strong></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#photo">Photo</a>
+    <a href="#film">Film</a>
+    <a href="#about">About</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">LUXURY WEDDING PHOTOGRAPHY & CINEMATOGRAPHY</p>
+    <h1>Love, <em>beautifully</em> remembered.</h1>
+    <p class="lead">Modern, emotional wedding photography and films for couples celebrating in El Salvador, London and wherever your story takes you.</p>
+    <div class="actions">
+      <a class="btn" href="#contact">Check your date</a>
+      <a class="text-link" href="#film">Watch the films →</a>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="video-frame">
+      <iframe src="https://www.youtube.com/embed/5XhSu4Jej8c?rel=0&modestbranding=1" title="Featured wedding film" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <span class="hero-caption">FEATURED FILM · LUXURY WEDDING SHOWREEL</span>
+  </div>
+</section>
+
+<section class="intro section">
+  <p class="eyebrow">EL SALVADOR · LONDON · WORLDWIDE</p>
+  <h2>Editorial style. <br><em>Real emotion.</em></h2>
+  <p class="intro-text">Your wedding should feel like your wedding. We combine a relaxed presence with an artistic eye for light, movement, architecture and the little moments that make the day yours.</p>
+</section>
+
+<section id="photo" class="section">
+  <div class="section-head"><div><p class="eyebrow">01 · PHOTO</p><h2>Photography that feels <em>alive.</em></h2></div><p>Relaxed, emotional storytelling with a modern editorial finish.</p></div>
+  <div class="masonry" id="photoGrid"></div>
+</section>
+
+<section id="film" class="section dark">
+  <div class="section-head"><div><p class="eyebrow">02 · FILM</p><h2>Stories in <em>motion.</em></h2></div><p>Cinematic films made to bring back the voices, movement and atmosphere of your day.</p></div>
+  <div class="film-grid" id="filmGrid"></div>
+</section>
+
+<section id="about" class="section about">
+  <div class="about-image"><img src="https://static.wixstatic.com/media/55ec88_f0012407b07943c79c6137a888317eed~mv2.jpg" alt="Wedding couple"></div>
+  <div>
+    <p class="eyebrow">03 · OUR APPROACH</p>
+    <h2>A calm presence behind the <em>camera.</em></h2>
+    <p>From the first conversation to the final gallery and film, the experience is designed to feel personal, organised and effortless.</p>
+    <div class="features">
+      <span>Full-day coverage</span><span>Photo + film collaboration</span><span>High-resolution gallery</span>
+      <span>Drone footage, weather permitting</span><span>Multicultural wedding experience</span><span>Expert planning guidance</span>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section blog">
+  <div class="section-head"><div><p class="eyebrow">04 · JOURNAL</p><h2>Notes on love, <em>light & weddings.</em></h2></div><p>Wedding inspiration, planning ideas and stories from behind the camera.</p></div>
+  <div class="blog-grid" id="blogGrid"></div>
+</section>
+
+<section id="contact" class="contact section">
+  <div>
+    <p class="eyebrow">05 · GET IN TOUCH</p>
+    <h2>Let's create something <em>beautiful.</em></h2>
+    <p>Tell us where you're getting married, your date and whether you're looking for photography, film or both.</p>
+    <a class="email" href="mailto:hi@davidrj.com">hi@davidrj.com</a>
+    <p class="locations">Based in <strong>El Salvador & London</strong><br>Available for destination weddings worldwide.</p>
+  </div>
+  <form action="mailto:hi@davidrj.com" method="post" enctype="text/plain">
+    <label>Name<input name="Name" required></label>
+    <label>Email<input name="Email" type="email" required></label>
+    <label>Wedding date<input name="Wedding date" type="date"></label>
+    <label>Venue / location<input name="Venue / location"></label>
+    <label>Service<select name="Service"><option>Photography</option><option>Film</option><option>Photography + Film</option></select></label>
+    <label>Message<textarea name="Message" rows="5"></textarea></label>
+    <button class="btn" type="submit">Send enquiry</button>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span>EL SALVADOR</span><strong>WEDDING</strong></div>
+  <p>Luxury wedding photography & films · El Salvador & London</p>
+  <a href="mailto:hi@davidrj.com">hi@davidrj.com</a>
+  <small>© <span id="year"></span> El Salvador Wedding. All rights reserved.</small>
+</footer>
+
+<script>
+const PHOTOS = ["https://static.wixstatic.com/media/55ec88_f0012407b07943c79c6137a888317eed~mv2.jpg", "https://static.wixstatic.com/media/55ec88_4a4dc1e99bca43c59eeebad05d23c0de~mv2.jpg", "https://static.wixstatic.com/media/55ec88_39388a970ec74a89b9ef5f5beb2cbeee~mv2.jpg", "https://static.wixstatic.com/media/55ec88_0eebf036a9154178bda4762cc24a18ff~mv2.jpg", "https://static.wixstatic.com/media/55ec88_cb43f7e75f944075b0ef09105eaf16cf~mv2.jpg", "https://static.wixstatic.com/media/55ec88_bc6b32c400b34be893f6492c839c469c~mv2.jpg", "https://static.wixstatic.com/media/55ec88_49f1172df05a4d0ba0d2c7590b195448~mv2.jpg", "https://static.wixstatic.com/media/55ec88_3196f3ac71dc4a319e9886f0366b1553~mv2.jpg", "https://static.wixstatic.com/media/55ec88_92cf3b7bec5941ccb6cbac4bdda9d43d~mv2.jpg", "https://static.wixstatic.com/media/55ec88_a609d66d0ef34147b5cfde9cfceab14f~mv2.jpg", "https://static.wixstatic.com/media/55ec88_2f675e086b20416190bcbf7b5bc76c9c~mv2.jpg", "https://static.wixstatic.com/media/55ec88_b73f3674ca8b42ecb75faad82076db66~mv2.jpg", "https://static.wixstatic.com/media/55ec88_71de70608112442a9a1d61faa1093431~mv2.jpg", "https://static.wixstatic.com/media/55ec88_e762090a1027443c8dae233f98768d8c~mv2.jpg", "https://static.wixstatic.com/media/55ec88_2ba3172b72c748eeadd0fc0577e8cff7~mv2.jpg", "https://static.wixstatic.com/media/55ec88_91dba7213b17457386b778631d3e8be5~mv2.jpg", "https://static.wixstatic.com/media/55ec88_0d9528ede7cc4a73988ab55258b4f615~mv2.jpg", "https://static.wixstatic.com/media/55ec88_c69b65acb34646b19db1b697060f081d~mv2.jpg", "https://static.wixstatic.com/media/55ec88_4ad55f1363f24318b2b4c83d919015ab~mv2.jpg", "https://static.wixstatic.com/media/55ec88_90c7ce1b012b4f24b59de43d90d9284f~mv2.jpg", "https://static.wixstatic.com/media/55ec88_29e5193d241a4463bfada002ca4c09ef~mv2.jpg"];
+const FILMS = [["Luxury Wedding Showreel", "5XhSu4Jej8c", "Featured cinematic wedding film"], ["Pennsylvania Castle \u2014 Cinematic Wedding", "ARpPdgYCyaY", "Dorset castle wedding"], ["Ashridge House Wedding", "pscv_IfkeNw", "Elegant country-house wedding"], ["Boclair House Glasgow", "vEtHxNTmiNA", "Fun cinematic wedding"], ["Italian Villa Bournemouth", "SUFFDEudcBw", "Destination-style celebration"], ["Leipzig Germany Wedding", "QiYF1tE_2qc", "Destination wedding story"], ["Highcliffe Castle & The Nici", "fEOe8Gi2hF4", "Coastal castle wedding"], ["Amsterdam Wedding", "vPqQvtEO_MI", "Romantic city wedding"]];
+const BLOG = [["The Best Confetti for Stunning Wedding Photos & Videos", "23 Mar 2025", "How to make one of the happiest, most energetic moments of the day look incredible on film and in photographs."], ["The Art of the Veil: Adding Timeless Elegance to Your Wedding Day", "2 Dec 2024", "Ideas for using movement, light and styling to make bridal portraits feel elegant and cinematic."], ["Luxury Weddings: The Planning, the Perfection, and How Firecracker Weddings Fits In", "25 Nov 2024", "A behind-the-scenes look at the planning and creative detail that shape a luxury wedding."], ["5 Stunning UK Wedding Venues Loved by Firecracker Weddings", "24 Nov 2024", "A venue inspiration guide built around architecture, atmosphere and photographic possibilities."], ["Celebrating Multicultural Love Stories", "23 Nov 2024", "A look at documenting different traditions with sensitivity while keeping the story personal."], ["Pennsylvania Castle Estate: Capturing the Magic", "22 Nov 2024", "A cinematic venue story from one of the UK's most distinctive coastal castle settings."], ["Why Firecracker Weddings Is Built for Luxury Photography & Cinematography", "11 Nov 2024", "What couples can expect from a modern, full-day photo and film experience."], ["Why Your Photographer and Videographer Should Work Together", "5 Sep 2024", "Why collaboration between photo and film teams can create a more seamless wedding-day experience."], ["You Need a Wedding Videographer Way More Than You Think", "5 Sep 2024", "The moments, voices and atmosphere that moving images preserve long after the day."], ["Emotional Moments: Personalized Wedding Films", "9 Jul 2024", "A story-led approach to creating a film that feels like your wedding rather than a template."], ["Unveiling Elegance: Stunning Wedding Showcases", "9 Jul 2024", "Creative ideas for turning the details of a luxury celebration into visual storytelling."], ["Capturing Love: Luxury Wedding Cinematography", "9 Jul 2024", "An introduction to the cinematic approach behind luxury wedding films."]];
+
+// If you know the exact YouTube ID for "Luxury Wedding Showreel",
+// change the first FILMS entry / featured iframe to that ID.
+const photoGrid = document.querySelector('#photoGrid');
+PHOTOS.forEach((src,i)=>{
+  const figure=document.createElement('figure');
+  figure.className='photo-card';
+  figure.innerHTML=`<img src="${src}" loading="lazy" alt="Wedding photography portfolio image ${i+1}"><span>${String(i+1).padStart(2,'0')}</span>`;
+  photoGrid.appendChild(figure);
+});
+
+const filmGrid=document.querySelector('#filmGrid');
+FILMS.slice(1).forEach(([title,id,desc])=>{
+  const card=document.createElement('article');
+  card.className='film-card';
+  card.innerHTML=`<div class="film-thumb"><img src="https://i.ytimg.com/vi/${id}/maxresdefault.jpg" alt="${title}"><a class="play" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">▶</a></div><h3>${title}</h3><p>${desc}</p>`;
+  filmGrid.appendChild(card);
+});
+
+const blogGrid=document.querySelector('#blogGrid');
+BLOG.forEach(([title,date,desc],i)=>{
+  const card=document.createElement('article');
+  card.className='blog-card';
+  card.innerHTML=`<div class="blog-number">0${(i+1).toString().slice(-1)}</div><p class="date">${date}</p><h3>${title}</h3><p>${desc}</p><a href="#contact">Read / enquire →</a>`;
+  blogGrid.appendChild(card);
+});
+
+document.querySelector('#year').textContent=new Date().getFullYear();
+document.querySelector('.menu').addEventListener('click',()=>document.querySelector('.nav nav').classList.toggle('open'));
+</script>
+</body>
+</html>
