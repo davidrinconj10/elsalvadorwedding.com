@@ -46,6 +46,23 @@ footer h3{font-size:1.6rem;color:var(--ink);margin-bottom:2px}footer .tag{font:i
 .lb button{position:absolute;width:44px;height:44px;border:0;border-radius:50%;background:#fff3;color:#fff;font-size:1.2rem;cursor:pointer}
 #lx{top:16px;right:16px}#lp{left:16px;top:50%}#ln{right:16px;top:50%}
 @media(max-width:800px){.two,form{grid-template-columns:1fr}nav{gap:14px;font-size:.7rem}.logo{display:none}header{justify-content:center}}
+
+.vp{width:100%;height:min(56.25vw,calc(100vh - 106px));background:#000}.vp iframe{width:100%;height:100%;border:0;display:block}
+.ht{text-align:center;padding:56px 5vw 10px}.ht h1{font-size:clamp(2.8rem,8vw,6rem)}.ht .tag{font:italic 400 clamp(1.15rem,2.6vw,1.7rem)/1.3 "Cormorant Garamond",serif;max-width:720px;margin:14px auto 0}.ht .sm{letter-spacing:.3em;text-transform:uppercase;font-size:.78rem;color:var(--mut);margin-top:16px}
+.pi{max-width:840px;margin:0 auto 40px}.pi img{width:100%;border-radius:4px}
+.txt{max-width:820px;margin:0 auto}.txt h2{text-align:center;letter-spacing:.06em;font-size:clamp(1.8rem,4vw,2.8rem)}.txt p{color:var(--mut);margin-bottom:18px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:5vw;max-width:1100px;margin:60px auto}.cols h6{font:600 .85rem Inter;letter-spacing:.18em;margin-bottom:14px}.cols p{color:var(--mut);margin-bottom:16px}
+.ss{max-width:980px;margin:56px auto 0}.stg{position:relative;background:var(--soft);height:min(70vh,640px)}.stg>img{width:100%;height:100%;object-fit:contain;cursor:zoom-in;display:block}
+.ar{position:absolute;top:50%;left:10px;transform:translateY(-50%);width:42px;height:42px;border:0;border-radius:50%;background:#fffd;font-size:1.6rem;line-height:1;cursor:pointer;z-index:2}.ar.r{left:auto;right:10px}
+.cnt{text-align:right;font-size:.8rem;color:var(--mut);padding-top:6px}
+.fi{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1100px;margin:30px auto 0}.fi img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.vr{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:4vw;align-items:start;margin:0 auto 70px;max-width:1150px}
+.vr .t{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;background:#000;cursor:pointer;color:#fff}.vr .t img{width:100%;height:100%;object-fit:cover}.vr .t iframe{width:100%;height:100%;border:0}
+.vr .t .pl{position:absolute;inset:0;display:grid;place-items:center;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;background:#0003}.vr .t .pl::before{content:"▶";display:block;font-size:2.4rem;margin-bottom:6px}
+.vr .t .du{position:absolute;right:10px;bottom:8px;background:#000b;padding:2px 8px;border-radius:4px;font-size:.78rem}
+.vr h3{font-size:1.5rem;margin-bottom:12px}.vr .d{white-space:pre-line;color:var(--mut);font-size:.93rem;line-height:1.65}
+.why{max-width:780px;margin:0 auto;text-align:center}.why ul{list-style:none;padding:0;text-align:left;margin:24px 0}.why li{margin-bottom:10px;color:var(--mut)}
+@media(max-width:800px){.cols,.vr{grid-template-columns:1fr}.fi{grid-template-columns:1fr}.vp{height:56.25vw}}
 </style></head><body>
 <div class="top"><div class="bar"><b>50% off</b> on Weddings in El Salvador until November 2027 · <a href="#/contact">Book your date</a></div><header><a class="logo" href="#/">El Salvador Weddings</a><nav id="nav"></nav></header></div>
 <main id="app"></main>
@@ -55,7 +72,62 @@ footer h3{font-size:1.6rem;color:var(--ink);margin-bottom:2px}footer .tag{font:i
 const SITE="https://davidrinconjimenez.wixsite.com/firecrackerweddings";
 const HERO="329158_c646c106a0954dbb9968b6c729aa6d0ef000.jpg";
 const PH=["55ec88_f0012407b07943c79c6137a888317eed","55ec88_4a4dc1e99bca43c59eeebad05d23c0de","55ec88_39388a970ec74a89b9ef5f5beb2cbeee","55ec88_0eebf036a9154178bda4762cc24a18ff","55ec88_cb43f7e75f944075b0ef09105eaf16cf","55ec88_bc6b32c400b34be893f6492c839c469c","55ec88_49f1172df05a4d0ba0d2c7590b195448","55ec88_3196f3ac71dc4a319e9886f0366b1553","55ec88_92cf3b7bec5941ccb6cbac4bdda9d43d","55ec88_a609d66d0ef34147b5cfde9cfceab14f","55ec88_2f675e086b20416190bcbf7b5bc76c9c","55ec88_b73f3674ca8b42ecb75faad82076db66","55ec88_71de70608112442a9a1d61faa1093431","55ec88_e762090a1027443c8dae233f98768d8c","55ec88_2ba3172b72c748eeadd0fc0577e8cff7","55ec88_91dba7213b17457386b778631d3e8be5","55ec88_0d9528ede7cc4a73988ab55258b4f615","55ec88_c69b65acb34646b19db1b697060f081d","55ec88_4ad55f1363f24318b2b4c83d919015ab","55ec88_90c7ce1b012b4f24b59de43d90d9284f","55ec88_29e5193d241a4463bfada002ca4c09ef","329158_880f7b1f29214d85a13e62f68887c6fb"].map(x=>x+"~mv2.jpg");
-const VID=[["5XhSu4Jej8c","Luxury Wedding Showreel","maxresdefault"],["ARpPdgYCyaY","Pennsylvania Castle","sddefault"],["pscv_IfkeNw","Ashridge House","maxresdefault"],["vEtHxNTmiNA","Boclair House, Glasgow","maxresdefault"],["SUFFDEudcBw","Italian Villa, Bournemouth","maxresdefault"],["QiYF1tE_2qc","Leipzig, Germany","maxresdefault"],["fEOe8Gi2hF4","Highcliffe Castle","maxresdefault"],["vPqQvtEO_MI","Amsterdam","hqdefault"]];
+const TAGS="Insta: weddingvideographeruk\n\n#weddingvideography\n#weddingvideo\n#londonvideographer";
+const VID=[
+["ARpPdgYCyaY","Pennsylvania Castle - Cinematic wedding - London videographer Sony A7SIII","sddefault","14:47",`I had the pleasure of filming this beautiful wedding in Dorset, the venue was amazing and the staff, everything so well organized, a castle with so much history.
+
+Copied from their website:
+
+Historical castle by the sea
+This luxurious 18th-century castle is located on the Jurassic coastline and is available for exclusive use, ideal for self-catered holidays, big party weekends, corporate retreats and celebrations. Following a refurbishment, Pennsylvania Castle offers classic yet modern surroundings with a distinct focus on comfort and luxury, featuring nine immaculate en-suite bedrooms, extensive entertainment and living areas and an indoor pool. Within the castle grounds are five luxury clifftop lodges, offering accommodation for another 20 guests and stunning coastal views.
+
+Pennsylvania Castle was opened by Princess Elizabeth, daughter of King George III, in 1800 and since then has enjoyed a rich and varied history that takes in Royal celebrations - the King and Queen visited in 1800 and enjoyed their wedding anniversary there, the Napoleonic Wars, preparations for the D Day landings, and literary figures such as Thomas Hardy. In 1950 the castle was turned into a hotel, then back into a private home in 1994 and is once again open to the public for private hire.
+
+The castle and its grounds occupy a total of 1.73 hectares (4.27 acres), with gardens that have been impeccably designed to provide secluded retreats throughout, adding to the charm and privacy of the estate. With beautiful reception rooms, elegant en-suites and stunning grounds you are sure to enjoy a luxury escape by the sea here.
+
+`+TAGS],
+["pscv_IfkeNw","Ashridge House Wedding - Cinematic wedding - London videographer","maxresdefault","09:05",`Absolutely stunning wedding at ashridgehouse.org.uk
+
+Once a royal residence to King Henry VIII and Princess Elizabeth I, today Ashridge House is an award winning meeting, events, and wedding venue. Set in 190 acres of beautiful landscaped gardens, Ashridge House is located in Hertfordshire, only 30 minutes north of London.
+
+Ashridge House is the perfect environment to learn, reflect and to be inspired. Step back into history and elegance in our luxury Grade I neo-gothic country house; we welcome you to join us and be part of Ashridge House history.
+
+I hope you enjoy it.
+
+`+TAGS],
+["vEtHxNTmiNA","Wedding video - Boclair House Glasgow - Fun cinematic wedding film - A7SIII London videographer","maxresdefault","10:54",`What a fun and beautiful wedding with Yi and Datong in Glasgow, a stunning venue with a lot of spots to create stunning images.
+
+I hope you enjoy it.
+
+`+TAGS+`\n#weddingfilm`],
+["SUFFDEudcBw","Wedding film Italian villa Bournemouth - wedding highlights - wedding videographer - Sony A7SIII","maxresdefault","16:58",`I had the chance to film in this epic wedding venue in Bournemouth, near the seaside.
+
+I hope you enjoy it.
+
+`+TAGS+`\n#weddinginspiration`],
+["QiYF1tE_2qc","Wedding film Leipzig Germany - London wedding videographer","maxresdefault","13:45",`I was so honored to be asked to travel all the way to Leipzig in Germany to film this wedding, really grateful to all the couples that appreciate my work so much and feel that my work and style is somehow unique and worth it to do the extra effort to get me to the destination.
+
+All I can say is thank you so much :)
+
+I hope you enjoy it.
+
+`+TAGS+`\n#weddingfilm`],
+["fEOe8Gi2hF4","Wedding video Highcliffe Castle and The Nici Bournemouth - Fun cinematic wedding film","maxresdefault","10:20",`I hope you enjoy it.
+
+`+TAGS+`\n#weddingfilm`],
+["vPqQvtEO_MI","Wedding film Amsterdam - Wedding videography - Sony A7SIII","hqdefault","09:00",`A gorgeous wedding in Amsterdam with a lovely couple, one of my favorite weddings this year, enjoyed very much filming around the canals and beautiful streets.
+
+I hope you enjoy this wedding film.
+
+`+TAGS+`\n#weddinginspiration\n#weddingideas\n#weddingdestination`]
+];
+const F=id=>id.includes(".")?id:id+"~mv2.jpg";
+const G={
+A:[["55ec88_f0012407b07943c79c6137a888317eed","A wedding couple in Kensington walking together in a nearby mews"],["55ec88_4a4dc1e99bca43c59eeebad05d23c0de","Our couple in front of the beautiful Ashridge House in Berkhampsted"],["55ec88_39388a970ec74a89b9ef5f5beb2cbeee","A beautiful moment with a couple embracing at Crondon Park Golf Club in Essex"],["55ec88_0eebf036a9154178bda4762cc24a18ff","A closeup of our couple at Ashridge House"],["55ec88_cb43f7e75f944075b0ef09105eaf16cf","A casual image of a couple walking in the vineyard at Old Luxters Barn in Henley"],["55ec88_bc6b32c400b34be893f6492c839c469c","A wedding couple dancing in a barn"]],
+B:[["55ec88_49f1172df05a4d0ba0d2c7590b195448","1MS03010"],["55ec88_3196f3ac71dc4a319e9886f0366b1553","1MS05910-2"],["55ec88_92cf3b7bec5941ccb6cbac4bdda9d43d","DSC09874"],["55ec88_a609d66d0ef34147b5cfde9cfceab14f","1MS05502"],["55ec88_2f675e086b20416190bcbf7b5bc76c9c","1MS04792"],["55ec88_b73f3674ca8b42ecb75faad82076db66","1MS04880"]],
+C:[["329158_ea5df86436bd4ed4b4c83e7a731f42d9~mv2.png","vlcsnap-2024-07-02-20h06m31s919"],["329158_10fc25661d184122a141c25e893e6dc9","Still 2024-08-07 141755_3.1.1"],["329158_49f19c1b02a94ff3971bbe5d5ca8a4be","DSC01194"],["55ec88_91dba7213b17457386b778631d3e8be5","1MS08398"],["55ec88_0d9528ede7cc4a73988ab55258b4f615","2MS06604"],["55ec88_4ad55f1363f24318b2b4c83d919015ab","DRJ02470"]]
+};
+const SS=k=>`<div class="ss" data-g="${k}"><div class="stg"><button class="ar" data-d="-1" aria-label="Previous">‹</button><img title="Press to zoom" alt=""><button class="ar r" data-d="1" aria-label="Next">›</button></div><div class="cnt"></div></div>`;
 // BODY: full article HTML goes in `body` (paragraphs, <h2>, <img>). If empty, the page links to the original post.
 const POSTS=[
 ["the-best-confetti-for-stunning-wedding-photos-videos","The Best Confetti for Stunning Wedding Photos & Videos","Mar 23, 2025","Martin Sylvester","5 min","55ec88_0d8cc904a5164940b1c4e36d9bbd5495~mv2.jpg","A confetti toss is one of the most joyful and visually striking moments in a wedding. It’s a chance to capture authentic emotions.",""],
@@ -79,31 +151,41 @@ const vcards=()=>`<div class="grid">${VID.map(v=>`<button class="v" data-y="${v[
 const pcards=l=>`<div class="grid">${l.map(p=>`<a class="card" href="#/post/${p[0]}"><img loading="lazy" src="${img(p[5],700)}" alt=""><h3>${p[1]}</h3><p class="meta">${p[3]} · ${p[2]} · ${p[4]} read</p><p>${p[6]}</p></a>`).join("")}</div>`;
 const form=()=>`<form id="fm"><input required name="a" placeholder="First name*"><input name="b" placeholder="Last name"><input required type="email" name="e" placeholder="Email*"><input required name="p" placeholder="Phone*"><input required class="f" name="v" placeholder="Wedding venue &amp; location*"><input required type="date" name="d"><select name="s"><option>Photo &amp; Film</option><option>Photography</option><option>Film</option></select><input required class="f" name="h" placeholder="How did you find out about us?*"><textarea class="f" name="m" rows="4" placeholder="Write a message"></textarea><button class="btn f">Submit</button></form>`;
 const PAGES={
-"":()=>`<div class="hero" style="background-image:url(${img(HERO,1600)})"><div><h1>El Salvador Weddings</h1><p class="tag">European-style luxury wedding photography &amp; films in El Salvador</p><p>Artistic Vision · Luxury Wedding Films &amp; Photography</p></div></div>
-<section><div class="w two"><img loading="lazy" src="${img(PH[21],900)}" alt=""><div><div class="k">Our Journey</div><h2>Our journey</h2><p>Embark on a visual journey with us as we capture the essence of love and emotions. Each project is a unique experience, reflecting the beauty of relationships and special moments. Explore our work and feel the love in motion.</p><p>Our team is more like a family of passionate artists &amp; adventurers. We have had the pleasure of documenting over 300 love stories from around the globe.</p><p>We can't wait to capture the magic of your special day! Share your exciting plans with us using the form below, and let's start creating unforgettable memories together.</p></div></div></section>
-<section class="alt"><div class="w two"><ul class="ck"><li><b>Unlimited Full-Day Wedding Coverage:</b> every moment without time constraints.</li><li><b>Seamless Photo &amp; Film Collaboration:</b> a hybrid team ensures a cohesive visual story.</li><li><b>Customized Style:</b> tailored to your unique vision and preferences.</li><li><b>High-Resolution Digital Gallery:</b> easily share, download, and print.</li><li><b>Expert Guidance:</b> support before and during your wedding.</li><li><b>Exclusive Wedding Tips PDF:</b> top advice for a flawless day.</li><li><b>Drone Footage Included:</b> aerial views, weather permitting.</li><li><b>Multicultural Wedding Expertise:</b> honouring diverse cultural traditions.</li><li><b>Cinematic Wedding Video:</b> professionally edited, high-definition.</li></ul><img loading="lazy" src="${img(PH[12],900)}" alt=""></div></section>
+"":()=>`<div class="vp"><iframe src="https://www.youtube-nocookie.com/embed/5XhSu4Jej8c?autoplay=1&mute=1&loop=1&playlist=5XhSu4Jej8c&rel=0&playsinline=1&modestbranding=1" title="Luxury Wedding Showreel" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe></div><div class="ht"><h1>El Salvador Weddings</h1><p class="tag">European-style luxury wedding photography &amp; films in El Salvador</p><p class="sm">Artistic Vision · Luxury Wedding Films &amp; Photography</p></div>
+<section><div class="w two"><img loading="lazy" src="${img(PH[21],900)}" alt=""><div><h2>OUR JOURNEY</h2><p>Embark on a visual journey with us as we capture the essence of love and emotions. Each project is a unique experience, reflecting the beauty of relationships and special moments. Explore our work and feel the love in motion.</p><p>Our team is more like a family of passionate artists &amp; adventurers. We have had the pleasure of documenting over 300 love stories from around the globe.</p><p>We can't wait to capture the magic of your special day! Share your exciting plans with us using the form below, and let's start creating unforgettable memories together.</p></div></div></section>
+<section class="alt"><div class="w two"><ul class="ck"><li>• Unlimited Full-Day Wedding Coverage: We capture every moment without time constraints.</li><li>• Seamless Photo &amp; Film Collaboration: Hybrid team ensures a cohesive visual story.</li><li>• Customized Style: Tailored to match your unique vision and preferences.</li><li>• High-Resolution Digital Gallery: Easily share, download, and print your photos.</li><li>• Expert Guidance: Support before and during your wedding for perfect shots.</li><li>• Exclusive Wedding Tips PDF: Includes top advice for a flawless wedding day.</li><li>• Drone Footage Included: Aerial views, weather permitting, for a cinematic touch.</li><li>• Multicultural Wedding Expertise: Experienced in honoring diverse cultural traditions.</li><li>• Cinematic Wedding Video: Professionally edited, high-definition video capturing all the key moments.</li></ul><img loading="lazy" src="${img(PH[12],900)}" alt=""></div></section>
 <section><div class="w"><div class="k">Get in touch</div><h2>Get in touch</h2>${form()}</div></section>
 <section class="alt"><div class="w"><div class="k">Why Us</div><h2>Why Us</h2>${pcards(POSTS.slice(0,3))}</div></section>`,
-photo:()=>`<section><div class="w"><h2>Photo</h2><div class="mas">${PH.map((p,i)=>`<button data-i="${i}"><img loading="lazy" src="${img(p,800)}" alt="Wedding photo ${i+1}"></button>`).join("")}</div></div></section>`,
-film:()=>`<section><div class="w"><h2>Film</h2>${vcards()}</div></section>`,
+photo:()=>`<section><div class="pi"><img src="${img(F("55ec88_e762090a1027443c8dae233f98768d8c"),1200)}" alt=""></div><div class="txt"><h2>PHOTOGRAPHY PORTFOLIO</h2><p>Our luxury wedding photography portfolio showcases the epitome of elegance and sophistication, capturing timeless moments with exquisite detail.</p><p>We specialize in creating stunning visual narratives that reflect the grandeur and emotion of your special day. Each photograph is a blend of artistic vision and meticulous craftsmanship, ensuring your memories are preserved with unparalleled beauty and style. Let us tell your love story through images that resonate with romance and luxury.</p></div>
+${SS("A")}
+<div class="cols"><div><h6>RELAXED:</h6><p>Embracing a relaxed approach to wedding photography enhances the luxury experience, capturing moments with an effortless elegance. By fostering a calm, laid-back atmosphere, our photographer allows couples to naturally enjoy their day, resulting in authentic, candid shots.</p><p>This stress-free method not only showcases the true essence of the celebration but also adds a touch of sophistication, ensuring each photo tells a heartfelt story.</p><p>This blend of relaxed photography creates timeless images, preserving precious memories with grace and style, ultimately reflecting the luxurious ambiance of your wedding day.</p></div>
+<div><h6>EMOTIONAL STORY-TELLING:</h6><p>An emotional storytelling approach in wedding photography weaves a powerful narrative, capturing the heartfelt moments that define the day. By focusing on genuine expressions and intimate interactions, the photographer brings out the emotions that make each wedding unique.</p><p>This method goes beyond posed shots, embracing the spontaneous and the candid to tell a compelling love story.</p><p>Combining modern contemporary techniques with a keen eye for detail, the result is a collection of images that are both visually stunning and deeply moving. Each photograph becomes a cherished memory, reflecting the true essence of the couple's journey and the emotions shared with loved ones.</p></div></div>
+${SS("B")}
+<div class="txt" style="margin-top:80px"><h2>FILM INSPIRATION</h2></div>
+<div class="fi"><img loading="lazy" src="${img(F("55ec88_71de70608112442a9a1d61faa1093431"),800)}" style="object-position:52% 39%" alt=""><img loading="lazy" src="${img(F("55ec88_dc77adc47d53429fa0e808cc78971569"),800)}" style="object-position:48% 51%" alt=""><img loading="lazy" src="${img(F("329158_bcc581d16d0d4dc7998fc35e83a174ce"),800)}" style="object-position:63% 58%" alt=""></div>
+${SS("C")}
+<div class="txt" style="margin-top:80px"><h2 style="font-size:1.1rem">ARTISTIC VISION</h2><p>Drawing on the world of haute couture, our approach emphasizes dramatic compositions, and meticulous attention to detail.</p><p>Our photographer utilizes fashion-forward techniques, playing with light, shadow, and innovative angles to create visually stunning images that exude glamour.</p><p>This style transforms each moment into a magazine-worthy shot, capturing the couple and their guests in their most glamorous and sophisticated states.</p><p>The result is a luxurious, artful collection of photographs that not only document the wedding day but also celebrate it as a stylish, timeless event.</p></div></section>`,
+film:()=>`<section><div class="pi" style="max-width:653px"><img src="${img(F("55ec88_63b0c8b32de5400294173cc952b59b6d"),1000)}" alt=""></div><div class="txt" style="margin-bottom:50px"><h2>Films</h2><p style="text-align:center">All Videos</p></div>
+${VID.map(v=>`<div class="vr"><button class="t" data-y="${v[0]}" aria-label="Play Video"><img loading="lazy" src="https://i.ytimg.com/vi/${v[0]}/${v[2]}.jpg" alt="${v[1]}"><span class="pl">Play Video</span><span class="du">${v[3]}</span></button><div><h3>${v[1]}</h3><div class="d">${v[4]}</div></div></div>`).join("")}
+<div class="why"><h2>Why Us</h2><ul><li>• Unlimited Full-Day Wedding Coverage: We capture every moment without time constraints.</li><li>• Seamless Photo &amp; Film Collaboration: Hybrid team ensures a cohesive visual story.</li><li>• Customized Style: Tailored to match your unique vision and preferences.</li><li>• High-Resolution Digital Gallery: Easily share, download, and print your photos.</li><li>• Expert Guidance: Support before and during your wedding for perfect shots.</li><li>• Exclusive Wedding Tips PDF: Includes top advice for a flawless wedding day.</li><li>• Drone Footage Included: Aerial views, weather permitting, for a cinematic touch.</li><li>• Multicultural Wedding Expertise: Experienced in honoring diverse cultural traditions.</li><li>• Cinematic Wedding Video: Professionally edited, high-definition video capturing all the key moments.</li></ul><a class="btn" href="mailto:hi@davidrj.com?subject=Luxury%20wedding%20enquiry">Get in touch</a><div class="pi" style="max-width:491px;margin-top:40px"><img loading="lazy" src="${img(F("329158_45993666e11840d9b5efb52e301129b0~mv2.png"),900)}" alt=""></div></div></section>`,
 contact:()=>`<section><div class="w" style="max-width:760px"><h2>Get in touch</h2><p class="meta">+44 (0)754935 8836 · El Salvador &amp; London</p>${form()}</div></section>`,
 blog:()=>`<section><div class="w"><h2>Blog</h2>${pcards(POSTS)}</div></section>`
 };
 function post(slug){const p=POSTS.find(x=>x[0]===slug);if(!p)return PAGES[""]();
  const i=POSTS.indexOf(p),nx=POSTS[i+1];
  return `<section><article class="post"><a class="meta" href="#/blog">← All posts</a><h1>${p[1]}</h1><p class="meta">${p[3]} · ${p[2]} · ${p[4]} read</p><img src="${img(p[5],1400)}" alt="">${p[7]||`<p>${p[6]}</p><p><a class="btn" href="${SITE}/post/${p[0]}" target="_blank" rel="noopener">Read the full article</a></p>`}<p style="margin-top:30px"><a class="btn" href="#/contact">Get in touch today</a></p>${nx?`<p class="meta" style="margin-top:30px">Next: <a href="#/post/${nx[0]}" style="color:var(--acc)">${nx[1]}</a></p>`:""}</article></section>`}
-const lb=$("#lb"),lc=$("#lc");let idx=0;
+const lb=$("#lb"),lc=$("#lc");let idx=0,LB=[];
 const arr=on=>$("#lp").style.display=$("#ln").style.display=on?"":"none";
-const show=()=>lc.innerHTML=`<img src="${img(PH[idx],2000)}" alt="">`;
-const step=d=>{idx=(idx+d+PH.length)%PH.length;show()};
+const show=()=>lc.innerHTML=`<img src="${img(LB[idx],2000)}" alt="">`;
+const step=d=>{idx=(idx+d+LB.length)%LB.length;show()};
 const close=()=>{lb.classList.remove("on");lc.innerHTML=""};
 $("#lx").onclick=close;$("#lp").onclick=()=>step(-1);$("#ln").onclick=()=>step(1);lb.onclick=e=>{if(e.target===lb)close()};
 addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==="Escape")close();if(e.key==="ArrowLeft")step(-1);if(e.key==="ArrowRight")step(1)});
 function route(){const h=location.hash.replace(/^#\/?/,"");const m=h.match(/^post\/(.+)/);
  app.innerHTML=m?post(m[1]):(PAGES[h]||PAGES[""])();
  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.k===(m?"blog":h)));
- app.querySelectorAll(".v").forEach(b=>b.onclick=()=>{lc.innerHTML=`<div class="fr"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.y}?autoplay=1&rel=0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`;arr(0);lb.classList.add("on")});
- app.querySelectorAll(".mas button").forEach(b=>b.onclick=()=>{idx=+b.dataset.i;show();arr(1);lb.classList.add("on")});
+ app.querySelectorAll(".vr .t").forEach(b=>b.onclick=()=>{b.outerHTML=`<div class="t"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.y}?autoplay=1&rel=0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`});
+ app.querySelectorAll(".ss").forEach(el=>{const g=G[el.dataset.g],im=el.querySelector("img"),c=el.querySelector(".cnt");let i=0;const up=()=>{im.src=img(F(g[i][0]),1400);im.alt=g[i][1];c.textContent=`${i+1}/${g.length}`};el.querySelectorAll(".ar").forEach(b=>b.onclick=()=>{i=(i+ +b.dataset.d+g.length)%g.length;up()});im.onclick=()=>{LB=g.map(x=>F(x[0]));idx=i;show();arr(1);lb.classList.add("on")};up()});
  const f=$("#fm");if(f)f.onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));location.href=`mailto:hi@davidrj.com?subject=${encodeURIComponent("Wedding enquiry "+d.d)}&body=${encodeURIComponent(Object.entries(d).map(x=>x.join(": ")).join("\n"))}`};
  scrollTo(0,0)}
 addEventListener("hashchange",route);route();
