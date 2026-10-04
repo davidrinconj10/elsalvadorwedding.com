@@ -4,7 +4,7 @@
 <meta name="description" content="European-style luxury wedding photography & films in El Salvador. 50% off weddings in El Salvador until November 2027.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#faf7f2;--ink:#1c1815;--mut:#74695f;--acc:#9a7424;--line:#e6ded3;--soft:#f1ebe2}
+:root{--bg:#000;--ink:#bb9d60;--mut:#a68d5a;--acc:#bb9d60;--gold:#bb9d60;--line:#2a2a2a;--soft:#1c1c1c}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
 body{font:300 1rem/1.7 Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
@@ -66,7 +66,7 @@ footer h3{font-size:1.6rem;color:var(--ink);margin-bottom:2px}footer .tag{font:i
 .gg{display:flex;flex-wrap:wrap;gap:8px;max-width:980px;margin:56px auto 0}.gg button{position:relative;border:0;padding:0;background:var(--soft);cursor:zoom-in;overflow:hidden;min-width:0}.gg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}.gg button:hover img{transform:scale(1.04)}
 @media(max-width:800px){.gg button{flex:0 0 calc(50% - 4px)!important;aspect-ratio:1!important}}
 
-.dk{background:#000;color:#c8a45c;padding-bottom:50px}
+.dk{background:#000;color:var(--acc);padding-bottom:50px}
 .dk .hr img{width:100%;aspect-ratio:2.66/1;object-fit:cover;display:block}
 .dk .intro{max-width:600px;margin:0 auto;text-align:center;padding:64px 5vw 56px}
 .dk h2.it{font:italic 400 clamp(1.3rem,2.2vw,1.7rem) "Cormorant Garamond",serif;color:#fff;margin-bottom:26px;letter-spacing:.01em}
@@ -76,7 +76,7 @@ footer h3{font-size:1.6rem;color:var(--ink);margin-bottom:2px}footer .tag{font:i
 .band .tx{max-width:380px;margin:auto;text-align:center;font-size:.9rem;line-height:1.65}
 .band .tx h6{font:italic 400 1.5rem "Cormorant Garamond",serif;color:#fff;letter-spacing:0;margin-bottom:24px}
 .band .tx h6.s{font:500 .85rem Inter,sans-serif;font-style:normal}
-.band .tx p{margin-bottom:18px;color:#c8a45c}
+.band .tx p{margin-bottom:18px;color:var(--acc)}
 .pg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .pg button{border:0;padding:0;background:#333;aspect-ratio:113/123;overflow:hidden;cursor:zoom-in}
 .pg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
@@ -89,10 +89,38 @@ footer h3{font-size:1.6rem;color:var(--ink);margin-bottom:2px}footer .tag{font:i
 .fl h2{font:700 clamp(2rem,4.5vw,3.2rem) "Cormorant Garamond",serif;color:#b8963f;letter-spacing:.04em;margin-bottom:36px}
 .fl .fi{max-width:1400px;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 auto}
 @media(max-width:800px){.band .in{grid-template-columns:1fr;gap:30px}.fl .fi{grid-template-columns:1fr}}
+
+/* ===== black & gold theme ===== */
+h1,h2{font-style:italic;font-weight:400}
+.top header{background:#000;padding:18px 5vw;justify-content:flex-start;box-shadow:none}
+.top nav{order:1;margin-left:7vw}.top .logo{order:2;margin-left:auto;margin-right:10vw;font:700 1.35rem "Cormorant Garamond",serif;letter-spacing:.05em;color:var(--ink)}
+.bar{background:#bb9d60;color:#111}.btn{background:#bb9d60;color:#111;border-radius:0}
+input,select,textarea{background:#111;border-color:#333;color:var(--ink)}input::placeholder,textarea::placeholder{color:var(--mut)}
+.card:hover h3{color:#fff}
+.ft{display:grid;grid-template-columns:1fr 1fr;gap:5vw;text-align:left;padding:90px 7vw 70px;border:0;font-size:.9rem;color:var(--ink)}
+.ft .fb{font:italic 400 2.4rem "Cormorant Garamond",serif}.ft .tag{font:italic 400 1.1rem "Cormorant Garamond",serif;margin-top:6px}
+.ft .fr2 p{margin-bottom:4px}.ft h3{font:italic 400 2.6rem "Cormorant Garamond",serif;margin:44px 0 18px}
+.ft form label{display:block;margin-bottom:6px}.ft form{display:block}.ft form div{display:flex;gap:10px;align-items:flex-end;max-width:520px}
+.ft input{background:transparent;border:0;border-bottom:1px solid var(--ink);border-radius:0;padding:10px 4px}
+/* ===== film page ===== */
+.fh{position:relative;aspect-ratio:3.28/1;min-height:220px;background:#000 center/cover}.fh::after{content:"";position:absolute;inset:0;background:#0007}
+.fh h1{position:absolute;z-index:1;top:7%;left:0;right:3%;text-align:center;font-size:clamp(2.4rem,6vw,5rem);color:#b8975a}
+.av{display:flex;align-items:center;gap:14px;padding:14px 1.5vw;font-size:.95rem}.av i{font-style:normal;font-size:1.3rem;line-height:1}
+.vs{position:relative}.vs .tr{display:grid;grid-auto-flow:column;grid-auto-columns:47%;gap:2.2%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 .3vw}.vs .tr::-webkit-scrollbar{display:none}
+.vc{scroll-snap-align:start;text-align:center}.vc .t{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;background:#000;cursor:pointer;overflow:hidden}
+.vc .t img{width:100%;height:100%;object-fit:cover}.vc .du{position:absolute;right:10px;bottom:8px;color:#fff;font:500 .78rem Inter,sans-serif}
+.vc .t::after{content:"▶  Play Video";position:absolute;inset:0;display:grid;place-items:center;color:#fff;background:#0006;opacity:0;transition:.3s;letter-spacing:.1em}.vc .t:hover::after{opacity:1}
+.vc h3{font:italic 400 clamp(1.4rem,2.6vw,2.2rem)/1.05 "Cormorant Garamond",serif;margin:18px auto 10px;max-width:92%}
+.vc p{font-size:.88rem;line-height:1.3;padding:0 4%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vs .ar{background:#000b;color:var(--ink);border:1px solid var(--ink);top:27%}
+.wy{display:grid;grid-template-columns:1fr 1fr;margin-top:70px;align-items:center}.wy .l{max-width:400px;margin:0 auto;padding:40px 0}
+.wy h2{text-align:center;font-size:clamp(2.4rem,4vw,3.6rem);margin-bottom:34px}.wy .li{margin-bottom:22px;line-height:1.6}.wy .li b{font-weight:600}
+.wy .btn{display:block;width:max-content;margin:34px auto 0}.wy>img{width:100%;aspect-ratio:730/874;object-fit:cover;display:block}
+@media(max-width:800px){.vs .tr{grid-auto-columns:88%}.wy,.ft{grid-template-columns:1fr}.wy .l{padding:30px 5vw}.top nav{margin-left:0}}
 </style></head><body>
 <div class="top"><div class="bar"><b>50% off</b> on Weddings in El Salvador until November 2027 · <a href="#/contact">Book your date</a></div><header><a class="logo" href="#/">El Salvador Weddings</a><nav id="nav"></nav></header></div>
 <main id="app"></main>
-<footer><h3>El Salvador Weddings</h3><p class="tag">European-style luxury wedding photography &amp; films in El Salvador</p><p>+44 (0)754935 8836 · El Salvador &amp; London · <a href="mailto:hi@davidrj.com">hi@davidrj.com</a></p></footer>
+<footer class="ft"><div><div class="fb">El Salvador Weddings</div><p class="tag">European-style luxury wedding photography &amp; films in El Salvador</p></div><div class="fr2"><p>+44 (0)754935 8836</p><p>El Salvador &amp; London</p><p><a href="mailto:hi@davidrj.com">hi@davidrj.com</a></p><h3>Stay connected</h3><form id="sub"><label for="se">Your email *</label><div><input type="email" required id="se"><button class="btn">Subscribe</button></div></form></div></footer>
 <div class="lb" id="lb"><button id="lx" aria-label="Close">✕</button><button id="lp" aria-label="Previous">←</button><div id="lc"></div><button id="ln" aria-label="Next">→</button></div>
 <script>
 const SITE="https://davidrinconjimenez.wixsite.com/firecrackerweddings";
@@ -150,9 +178,10 @@ I hope you enjoy this wedding film.
 const F=id=>id.includes(".")?id:id+"~mv2.jpg";
 const G={
 A:[["55ec88_f0012407b07943c79c6137a888317eed","A wedding couple in Kensington walking together in a nearby mews"],["55ec88_4a4dc1e99bca43c59eeebad05d23c0de","Our couple in front of the beautiful Ashridge House in Berkhampsted"],["55ec88_39388a970ec74a89b9ef5f5beb2cbeee","A beautiful moment with a couple embracing at Crondon Park Golf Club in Essex"],["55ec88_0eebf036a9154178bda4762cc24a18ff","A closeup of our couple at Ashridge House"],["55ec88_cb43f7e75f944075b0ef09105eaf16cf","A casual image of a couple walking in the vineyard at Old Luxters Barn in Henley"],["55ec88_bc6b32c400b34be893f6492c839c469c","A wedding couple dancing in a barn"]],
-B:[["55ec88_49f1172df05a4d0ba0d2c7590b195448","1MS03010"],["55ec88_3196f3ac71dc4a319e9886f0366b1553","1MS05910-2"],["55ec88_92cf3b7bec5941ccb6cbac4bdda9d43d","DSC09874"],["55ec88_a609d66d0ef34147b5cfde9cfceab14f","1MS05502"],["55ec88_2f675e086b20416190bcbf7b5bc76c9c","1MS04792"],["55ec88_b73f3674ca8b42ecb75faad82076db66","1MS04880"]],
+B:[["images/emo-1.jpg","Bride laughing with her groom in golden sunset light"],["images/emo-2.jpg","Bride and groom at sunset by the sea with her veil flying in the wind"],["55ec88_92cf3b7bec5941ccb6cbac4bdda9d43d","DSC09874"],["55ec88_a609d66d0ef34147b5cfde9cfceab14f","1MS05502"],["55ec88_2f675e086b20416190bcbf7b5bc76c9c","1MS04792"],["55ec88_b73f3674ca8b42ecb75faad82076db66","1MS04880"]],
 C:[["329158_ea5df86436bd4ed4b4c83e7a731f42d9~mv2.png","vlcsnap-2024-07-02-20h06m31s919"],["329158_10fc25661d184122a141c25e893e6dc9","Still 2024-08-07 141755_3.1.1"],["329158_49f19c1b02a94ff3971bbe5d5ca8a4be","DSC01194"],["55ec88_91dba7213b17457386b778631d3e8be5","1MS08398"],["55ec88_0d9528ede7cc4a73988ab55258b4f615","2MS06604"],["55ec88_4ad55f1363f24318b2b4c83d919015ab","DRJ02470"]]
 };
+const WY=[["Unlimited Full-Day Wedding Coverage","We capture every moment without time constraints."],["Seamless Photo &amp; Film Collaboration","Hybrid team ensures a cohesive visual story."],["Customized Style","Tailored to match your unique vision and preferences."],["High-Resolution Digital Gallery","Easily share, download, and print your photos."],["Expert Guidance","Support before and during your wedding for perfect shots."],["Exclusive Wedding Tips PDF","Includes top advice for a flawless wedding day."],["Drone Footage Included","Aerial views, weather permitting, for a cinematic touch."],["Multicultural Wedding Expertise","Experienced in honoring diverse cultural traditions."],["Cinematic Wedding Video","Professionally edited, high-definition video capturing all the key moments."]];
 const AR={A:[1.5,1.5,1.5,.667,1.5,1.5],B:[1.5,1,.667,1.5,1.5,1.5],C:[1.778,1.778,.667,1,.667,1.5]};
 const PG=k=>`<div class="pg">${G[k].map((x,i)=>`<button data-g="${k}" data-i="${i}" title="Press to zoom"><img loading="lazy" src="${img(F(x[0]),600)}" alt="${x[1]}"></button>`).join("")}</div>`;
 const SS=k=>`<div class="gg">${G[k].map((x,i)=>`<button data-g="${k}" data-i="${i}" title="Press to zoom" style="flex:${AR[k][i]} 1 ${Math.round(AR[k][i]*210)}px;aspect-ratio:${AR[k][i]}"><img loading="lazy" src="${img(F(x[0]),900)}" alt="${x[1]}"></button>`).join("")}</div>`;
@@ -172,7 +201,7 @@ const POSTS=[
 ["capturing-love-luxury-wedding-cinematography","Capturing Love: Luxury Wedding Cinematography","Jul 9, 2024","David RJ","2 min","329158_b3ffe786f4504b3eb683fedd1f801499~mv2.png","When it comes to capturing the essence of love on your special day, look no further than a luxury wedding cinematography service.",""]
 ];
 const $=s=>document.querySelector(s),app=$("#app");
-const img=(f,w)=>`https://static.wixstatic.com/media/${f}/v1/fit/w_${w},h_${w},q_80/${f}`;
+const img=(f,w)=>f.startsWith("images/")?f:`https://static.wixstatic.com/media/${f}/v1/fit/w_${w},h_${w},q_80/${f}`;
 const NAV=[["","Home"],["photo","Photo"],["film","Film"],["contact","Contact"],["blog","Blog"]];
 $("#nav").innerHTML=NAV.map(n=>`<a href="#/${n[0]}" data-k="${n[0]}">${n[1]}</a>`).join("");
 const vcards=()=>`<div class="grid">${VID.map(v=>`<button class="v" data-y="${v[0]}"><div class="t"><img loading="lazy" src="https://i.ytimg.com/vi/${v[0]}/${v[2]}.jpg" alt=""></div><b>${v[1]}</b></button>`).join("")}</div>`;
@@ -190,9 +219,10 @@ photo:()=>`<div class="dk"><div class="hr"><img src="${img(F("55ec88_e762090a102
 <div class="band"><div class="in"><div class="tx"><h6 style="font-size:1.15rem">EMOTIONAL STORY-TELLING:</h6><p>An emotional storytelling approach in wedding photography weaves a powerful narrative, capturing the heartfelt moments that define the day. By focusing on genuine expressions and intimate interactions, the photographer brings out the emotions that make each wedding unique.</p><p>This method goes beyond posed shots, embracing the spontaneous and the candid to tell a compelling love story.</p><p>Combining modern contemporary techniques with a keen eye for detail, the result is a collection of images that are both visually stunning and deeply moving. Each photograph becomes a cherished memory, reflecting the true essence of the couple's journey and the emotions shared with loved ones.</p></div>${PG("B")}</div></div>
 <div class="fl"><h2>FILM INSPIRATION</h2><div class="fi"><img loading="lazy" src="${img(F("55ec88_71de70608112442a9a1d61faa1093431"),900)}" style="object-position:52% 39%" alt=""><img loading="lazy" src="${img(F("55ec88_dc77adc47d53429fa0e808cc78971569"),900)}" style="object-position:48% 51%" alt=""><img loading="lazy" src="${img(F("329158_bcc581d16d0d4dc7998fc35e83a174ce"),900)}" style="object-position:63% 58%" alt=""></div></div>
 <div class="band" style="margin-top:0"><div class="in"><div class="sl">${PG("C")}<button class="ar" data-d="-1" aria-label="Previous">‹</button><button class="ar r" data-d="1" aria-label="Next">›</button></div><div class="tx"><h6 class="s">ARTISTIC VISION</h6><p>Drawing on the world of haute couture, our approach emphasizes dramatic compositions, and meticulous attention to detail.</p><p>Our photographer utilizes fashion-forward techniques, playing with light, shadow, and innovative angles to create visually stunning images that exude glamour.</p><p>This style transforms each moment into a magazine-worthy shot, capturing the couple and their guests in their most glamorous and sophisticated states.</p><p>The result is a luxurious, artful collection of photographs that not only document the wedding day but also celebrate it as a stylish, timeless event.</p></div></div></div></div>`,
-film:()=>`<section><div class="pi" style="max-width:653px"><img src="${img(F("55ec88_63b0c8b32de5400294173cc952b59b6d"),1000)}" alt=""></div><div class="txt" style="margin-bottom:50px"><h2>Films</h2><p style="text-align:center">All Videos</p></div>
-${VID.map(v=>`<div class="vr"><button class="t" data-y="${v[0]}" aria-label="Play Video"><img loading="lazy" src="https://i.ytimg.com/vi/${v[0]}/${v[2]}.jpg" alt="${v[1]}"><span class="pl">Play Video</span><span class="du">${v[3]}</span></button><div><h3>${v[1]}</h3><div class="d">${v[4]}</div></div></div>`).join("")}
-<div class="why"><h2>Why Us</h2><ul><li>• Unlimited Full-Day Wedding Coverage: We capture every moment without time constraints.</li><li>• Seamless Photo &amp; Film Collaboration: Hybrid team ensures a cohesive visual story.</li><li>• Customized Style: Tailored to match your unique vision and preferences.</li><li>• High-Resolution Digital Gallery: Easily share, download, and print your photos.</li><li>• Expert Guidance: Support before and during your wedding for perfect shots.</li><li>• Exclusive Wedding Tips PDF: Includes top advice for a flawless wedding day.</li><li>• Drone Footage Included: Aerial views, weather permitting, for a cinematic touch.</li><li>• Multicultural Wedding Expertise: Experienced in honoring diverse cultural traditions.</li><li>• Cinematic Wedding Video: Professionally edited, high-definition video capturing all the key moments.</li></ul><a class="btn" href="mailto:hi@davidrj.com?subject=Luxury%20wedding%20enquiry">Get in touch</a><div class="pi" style="max-width:491px;margin-top:40px"><img loading="lazy" src="${img(F("329158_45993666e11840d9b5efb52e301129b0~mv2.png"),900)}" alt=""></div></div></section>`,
+film:()=>`<div class="fh" style="background-image:url(${img(F("55ec88_63b0c8b32de5400294173cc952b59b6d"),1800)})"><h1>Films</h1></div>
+<div class="av"><i>⋮</i><b>All Videos</b></div>
+<div class="vs"><div class="tr">${VID.map(v=>`<div class="vc"><button class="t" data-y="${v[0]}" aria-label="Play Video"><img loading="lazy" src="https://i.ytimg.com/vi/${v[0]}/${v[2]}.jpg" alt="${v[1]}"><span class="du">${v[3]}</span></button><h3>${v[1]}</h3><p>${(v[1]+" "+v[4]).replace(/\s+/g," ")}</p></div>`).join("")}</div><button class="ar" data-d="-1" aria-label="Previous">‹</button><button class="ar r" data-d="1" aria-label="Next">›</button></div>
+<div class="wy"><div class="l"><h2>Why Us</h2>${WY.map(w=>`<div class="li">• <b>${w[0]}:</b> ${w[1]}</div>`).join("")}<a class="btn" href="mailto:hi@davidrj.com?subject=Luxury%20wedding%20enquiry">Get in touch</a></div><img loading="lazy" src="${img(F("329158_45993666e11840d9b5efb52e301129b0~mv2.png"),1400)}" alt=""></div>`,
 contact:()=>`<section><div class="w" style="max-width:760px"><h2>Get in touch</h2><p class="meta">+44 (0)754935 8836 · El Salvador &amp; London</p>${form()}</div></section>`,
 blog:()=>`<section><div class="w"><h2>Blog</h2>${pcards(POSTS)}</div></section>`
 };
@@ -209,10 +239,12 @@ addEventListener("keydown",e=>{if(!lb.classList.contains("on"))return;if(e.key==
 function route(){const h=location.hash.replace(/^#\/?/,"");const m=h.match(/^post\/(.+)/);
  app.innerHTML=m?post(m[1]):(PAGES[h]||PAGES[""])();
  document.querySelectorAll("#nav a").forEach(a=>a.classList.toggle("on",a.dataset.k===(m?"blog":h)));
- app.querySelectorAll(".vr .t").forEach(b=>b.onclick=()=>{b.outerHTML=`<div class="t"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.y}?autoplay=1&rel=0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`});
+ app.querySelectorAll(".vc .t").forEach(b=>b.onclick=()=>{lc.innerHTML=`<div class="fr"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.y}?autoplay=1&rel=0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>`;arr(0);lb.classList.add("on")});
+ app.querySelectorAll(".vs .ar").forEach(b=>b.onclick=()=>{const g=b.parentNode.querySelector(".tr");g.scrollBy({left:+b.dataset.d*g.clientWidth*.49,behavior:"smooth"})});
  app.querySelectorAll(".pg button").forEach(b=>b.onclick=()=>{LB=G[b.dataset.g].map(x=>F(x[0]));idx=+b.dataset.i;show();arr(1);lb.classList.add("on")});
  app.querySelectorAll(".sl .ar").forEach(b=>b.onclick=()=>{const g=b.parentNode.querySelector(".pg");g.scrollBy({left:+b.dataset.d*g.clientWidth*.45,behavior:"smooth"})});
  const f=$("#fm");if(f)f.onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(f));location.href=`mailto:hi@davidrj.com?subject=${encodeURIComponent("Wedding enquiry "+d.d)}&body=${encodeURIComponent(Object.entries(d).map(x=>x.join(": ")).join("\n"))}`};
  scrollTo(0,0)}
 addEventListener("hashchange",route);route();
+$("#sub").onsubmit=e=>{e.preventDefault();location.href=`mailto:hi@davidrj.com?subject=Subscribe&body=${encodeURIComponent("Please add me to your list: "+$("#se").value)}`};
 </script></body></html>
