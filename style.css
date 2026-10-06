@@ -142,3 +142,10 @@ a.lg{text-decoration:none;display:inline-block}
 .ojx p{color:var(--mut);margin-bottom:16px}.ojx .hook{font:italic 400 clamp(1.2rem,1.9vw,1.55rem)/1.4 "Cormorant Garamond",serif;color:var(--ink);margin-bottom:22px}
 .rv{padding:60px 5vw}.rvw{max-width:860px}.rs{grid-template-columns:minmax(140px,225px) 1fr;gap:3.5vw}.rt blockquote{font-size:clamp(.9rem,1.2vw,1.1rem)}.who{font-size:.8rem;margin-top:14px}
 @media(max-width:800px){.pg5{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:62%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.pg5 figure{scroll-snap-align:start}.ojg{grid-template-columns:1fr}.ojg>img{max-width:360px;margin:auto}.rs{grid-template-columns:1fr}}
+
+/* places below the story; reviews back to full size but with less vertical space */
+.oj{padding-bottom:50px}.ojg{margin-bottom:64px}.pg5{margin-bottom:0}
+.rv{padding:34px 5vw}.rvh{margin-bottom:14px}.rvw{max-width:1150px}.rs{grid-template-columns:minmax(200px,300px) 1fr;gap:5vw}
+.rt blockquote{font-size:clamp(1.05rem,1.6vw,1.45rem)}.who{font-size:.95rem;margin-top:18px}
+.rtr{align-items:flex-start}.rvv{transition:height .5s ease}.dots{margin-top:14px}
+@media(max-width:800px){.rs{grid-template-columns:1fr}}
